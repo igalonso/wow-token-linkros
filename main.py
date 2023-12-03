@@ -91,7 +91,6 @@ def send_message(service, user_id, message):
         return message
     except HttpError as error:
         print('An error occurred: %s' % error)
-print("eres tonto")
 
 def send_email_with_gmail_api(email_info):
     creds = Credentials.from_authorized_user_file('token.json')
